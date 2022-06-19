@@ -1,0 +1,193 @@
+
+.pages-wrapper.auth {
+    padding-top: 48px;
+}
+
+.auth-wrapper {
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.auth-content {
+    background: var(--white-0);
+    border: 1px solid var(--black-5);
+    border-radius: 8px;
+    min-height: 420px;
+    padding: 48px;
+}
+
+.auth-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--black-1);
+    margin-bottom: 28px;
+}
+
+.auth-content button {
+    width: 100%;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.auth-content>a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--blue-1);
+    margin-top: 12px;
+
+}
+
+.auth-steps {
+    margin-bottom: 24px;
+}
+
+.auth-steps ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -6px;
+    position: relative;
+    z-index: 1;
+}
+
+.auth-steps ul::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 1px dashed var(--black-4);
+    z-index: -1;
+}
+
+.auth-steps ul li {
+    display: flex;
+    padding: 0 6px;
+    background-color: white;
+}
+
+.auth-steps ul li i {
+    width: 24px;
+    border-radius: 50%;
+    height: 24px;
+    border: 1px solid var(--black-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 8px;
+}
+
+.auth-steps ul li span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: var(--black-4);
+    white-space: nowrap;
+}
+
+.auth-steps ul li.progress i {
+    border-color: var(--green-2);
+    background-color: var(--green-5);
+    color: var(--green-5);
+
+}
+
+.auth-steps ul li.progress span {
+    color: var(--black-1);
+}
+
+.auth-steps ul li.active i {
+    border-color: var(--green-2);
+    background-color: var(--green-2);
+    color: var(--white-0)
+}
+
+.auth-steps ul li.active span {
+    color: var(--black-2);
+}
+
+.auth-radio.first {
+    margin-bottom: 24px;
+}
+
+.auth-radio h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: var(--black-1);
+    margin-bottom: 12px;
+
+}
+
+.auth-radio-item>input {
+    display: none;
+}
+
+.auth-radio-item.large .auth-radio-item-block {
+    min-height: 64px;
+}
+
+.auth-radio-item.small .auth-radio-item-block {
+    min-height: 44px;
+}
+
+.auth-radio-item-block {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background-color: white;
+    border: 1px solid var(--black-5);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-radio-item-block i {
+    border: 1px solid var(--black-4);
+    max-width: 16px;
+    flex: 0 0 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.auth-radio-item-block span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: var(--black-1);
+
+}
+
+.auth-radio-item>input:checked~.auth-radio-item-block {
+    border-color: var(--green-1);
+}
+
+.auth-radio-item>input:checked~.auth-radio-item-block span {
+    color: var(--green-2);
+}
+
+.auth-radio-item>input:checked~.auth-radio-item-block i {
+    background-color: var(--green-2);
+    border-color: var(--green-1);
+}
+
+.auth-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.auth-footer button {
+    width: calc(50% - 6px);
+    margin: 0;
+}

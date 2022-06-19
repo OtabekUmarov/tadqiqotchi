@@ -1,0 +1,46 @@
+
+.filter {
+    width: 100%;
+  }
+  .filter.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    display: none;
+  }
+  .filter .ant-collapse-content > .ant-collapse-content-box {
+    padding: 24px 0 6px 0;
+  }
+  .filter .ant-collapse-content {
+    border: none;
+  }
+  .filter.ant-collapse > .ant-collapse-item {
+    border-radius: 0 !important;
+    border: none;
+  }
+  .filter.ant-collapse {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+  
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+  .filter-col1 {
+    width: 17.5%;
+    padding: 0 8px;
+  }
+  .filter-col2 {
+    width: 15%;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .filter button {
+    width: 100%;
+    margin-top: auto;
+    justify-content: center;
+  }
+  .filter .ant-form-item {
+    margin: 0;
+  }

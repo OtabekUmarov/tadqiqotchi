@@ -1,0 +1,54 @@
+.pages {
+  height: calc(100vh - 69px);
+  width: 100%;
+  padding: 24px;
+}
+
+.pages-wrapper {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px 32px;
+}
+
+.pages-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--black-5);
+  flex-wrap: wrap;
+  padding: 18px 0;
+}
+
+.pages-body {
+  padding: 24px 0;
+}
+
+.pages .ps__thumb-y {
+  width: 4px;
+  right: 1px;
+}
+
+.pages.ps>.ps__rail-x:hover,
+.pages.ps>.ps__rail-y:hover,
+.pages.ps>.ps__rail-x:focus,
+.pages.ps>.ps__rail-y:focus,
+.pages.ps>.ps__rail-x.ps--clicking,
+.pages.ps>.ps__rail-y.ps--clicking {
+  opacity: 1;
+}
+
+.pages>.ps__rail-y:hover>.ps__thumb-y,
+.ps__rail-y:focus>.ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  width: 4px !important;
+}
+
+.pages>.ps__rail-y {
+  width: 6px;
+  background: var(--black-6) !important;
+}
+.ant-select-arrow .ant-select-arrow-icon {
+  font-size: 20px;
+}

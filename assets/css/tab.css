@@ -1,0 +1,130 @@
+
+.tab-wrapper {
+    display: flex;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 3;
+}
+
+.tab>.ps__rail-x:hover>.ps__thumb-x,
+.tab>.ps__rail-x:focus>.ps__thumb-x,
+.tab>.ps__rail-x.ps--clicking .ps__thumb-x {
+    height: 4px;
+}
+
+.tab.ps .ps__thumb-x {
+    height: 4px;
+    bottom: 1px;
+}
+
+.ps.tab .ps__rail-x:hover,
+.ps.tab .ps__rail-y:hover,
+.ps.tab .ps__rail-x:focus,
+.ps.tab .ps__rail-y:focus,
+.ps.tab .ps__rail-x.ps--clicking,
+.ps.tab .ps__rail-y.ps--clicking {
+    opacity: 1;
+}
+
+.ps.tab .ps__rail-x {
+    height: 6px;
+}
+
+.ps.tab .ps__rail-x {
+    background-color: var(--black-5);
+}
+
+.pages-body  > .tab {
+    max-width: 100%;
+}
+.tab {
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 71px);
+    width: 100%;
+    padding-bottom: 11px;
+}
+
+.tab .ant-btn {
+    margin-right: 12px;
+    padding: 0 16px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: var(--black-3);
+    border-radius: 4px;
+    border: 1px solid var(--black-6);
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.tab .ant-btn:hover {
+    color: var(--green-2);
+}
+
+.tab button:last-of-type {
+    margin-right: 0;
+}
+
+.tab .ant-btn.active {
+    background-color: var(--green-6);
+    border-color: var(--green-2);
+    color: var(--green-1);
+}
+
+.tab-count {
+    width: 24px;
+    height: 20px;
+    background: var(--black-6);
+    color: var(--black-3);
+    border-radius: 20px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab .ant-btn.active .tab-count {
+    background-color: var(--green-2);
+    color: var(--white-0);
+}
+
+.tab-layout {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-bottom: 11px;
+
+}
+
+.tab-layout i {
+    color: var(--black-4);
+    font-size: 24px;
+    width: 27.5px;
+    height: 27.5px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tab-layout i:first-child {
+    border: 1px solid var(--black-5);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-right: -1px;
+}
+
+.tab-layout i:last-child {
+    border: 1px solid var(--black-5);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.tab-layout i.active {
+    color: var(--blue-1);
+}

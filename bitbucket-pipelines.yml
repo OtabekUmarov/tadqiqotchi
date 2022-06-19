@@ -1,0 +1,9 @@
+pipelines:
+
+  branches:
+    master:
+      - step:
+          name: Deploy to Production
+          script:
+            - echo "Deploy to Production|"
+            - ssh root@$SSH_HOST "bash /var/www/osg_projects/shaffof/frontend/deploy_files/deploy.sh"

@@ -1,0 +1,291 @@
+/* table */
+.table {
+    border-radius: 8px;
+    border: 1px solid var(--black-5);
+    overflow: hidden;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.table::after {
+    /* table header background */
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 45px;
+    background-color: var(--black-6);
+    z-index: -1;
+}
+
+.table table {
+    width: 100%;
+}
+
+.table table thead tr th {
+    color: var(--black-2);
+    padding: 12px 8px 12px 0;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+
+}
+
+table tr {
+    cursor: pointer;
+}
+
+.table table tbody tr {
+    padding: 0 8;
+}
+
+.table table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid var(--black-5);
+}
+
+.table table tbody tr td:last-child {
+    padding-right: 0;
+}
+
+.table table tbody tr td {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: var(--black-0);
+    padding: 16px 8px 16px 0;
+
+}
+
+.table table tbody tr td a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: var(--blue-1);
+    display: flex;
+    align-items: center;
+}
+
+.table table tbody tr td a i {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+
+.table-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.table-status i {
+    font-size: 24px;
+    color: var(--black-2);
+    cursor: pointer;
+    margin-left: 24px;
+}
+
+.table-dropdown {
+    border: 1px solid var(--black-5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    background-color: var(--white-0);
+    padding: 4px;
+}
+
+.table-dropdown li {
+    min-height: 36px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.table-dropdown li:hover {
+    background-color: #F4F4F4;
+}
+
+.table-dropdown li i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.table-dropdown li span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+
+.table-dropdown li.green i,
+.table-dropdown li.green span {
+    color: var(--green-1);
+
+}
+
+.table-dropdown li.red i,
+.table-dropdown li.red span {
+    color: var(--red-1);
+
+}
+
+/* table */
+
+/* table2 */
+.table2 {
+    border: 1px solid var(--black-5);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.table2 table {
+    width: 100%;
+}
+
+.table2 thead {
+    background-color: #F9F9F9;
+    border-bottom: 1px solid var(--black-5);
+}
+
+.table2 thead th {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-2);
+    padding: 12px;
+}
+
+.table2 tbody td {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-1);
+    padding: 12px;
+
+}
+
+.table2 tbody tr:not(:last-child) td {
+    border-bottom: 1px solid var(--black-5);
+
+}
+
+/* table2 */
+
+/* table3 */
+.table3 {
+    overflow-x: auto;
+    border-radius: 4px;
+    overflow-y: hidden;
+    border: 1px solid var(--black-5);
+}
+
+.table3 table {
+    width: 100%;
+    max-width: 100%;
+    margin: -1px;
+}
+
+.table3 thead {
+    background-color: #F9F9F9;
+}
+
+.table3 thead th {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-2);
+    border: 1px solid var(--black-5);
+    padding: 12px;
+}
+
+.table3 table td {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-1);
+    border: 1px solid var(--black-5);
+    padding: 12px;
+}
+
+/* table3 */
+
+/* table4 mini */
+.table4 {
+    padding: 0 16px;
+    background: var(--white-0);
+    border: 1px solid var(--black-5);
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.table4::after {
+    content: '';
+    height: 36px;
+    position: absolute;
+    z-index: -1;
+    background-color: #F9F9F9;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid var(--black-5);
+
+}
+
+.table4 table {
+    width: 100%;
+}
+
+.table4 thead {}
+
+.table4 thead tr th {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-2);
+    padding: 10px 12px;
+
+}
+
+.table4 tbody tr td:first-child,
+.table4 thead tr th:first-child {
+    padding-left: 0;
+}
+
+.table4 tbody tr td:last-child,
+.table4 thead tr th:last-child {
+    padding-right: 0;
+}
+
+.table4 tbody tr td {
+    padding: 0 8px;
+    padding: 10px 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-1);
+
+}
+
+.table4 tbody tr:not(:last-child) td {
+    border-bottom: 1px solid var(--black-5);
+}
+
+
+/* table4 mini */

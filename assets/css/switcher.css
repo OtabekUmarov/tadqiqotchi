@@ -1,0 +1,38 @@
+.lang-switcher {
+    display: flex;
+    padding: 3px;
+    border: 1px solid var(--black-4);
+    border-radius: 4px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    width: max-content;
+}
+
+.lang-switcher span {
+    height: 24px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+
+}
+
+.lang-switcher span.active {
+    background: var(--black-6);
+
+
+}
+
+.lang-switcher.active .lang-switcher-active {
+    border-radius: 2px 0 0 2px;
+    transform: translateX(0);
+}

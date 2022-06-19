@@ -1,0 +1,563 @@
+@media(max-width: 1199px) {
+    .pages {
+        padding: 16px;
+        height: calc(100vh - 56px);
+    }
+
+    .header {
+        height: 56px;
+    }
+
+    .content-2 {
+        padding: 16px;
+    }
+
+    .mb-32 {
+        margin-bottom: 24px !important;
+    }
+
+    .mt-32 {
+        margin-top: 24px !important;
+    }
+
+    .custom-radio-block,
+    .ant-select-selection--single .ant-select-selection__rendered,
+    .full-calendar-select .ant-select-selection--single .ant-select-selection__rendered,
+    .ant-btn,
+    .ant-input {
+        height: 32px;
+    }
+
+    .fc .fc-toolbar-title,
+    .card-analytic h3 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    .text-body1 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card-analytic {
+        padding: 12px;
+    }
+
+    .pages-body {
+        padding: 16px 0;
+    }
+
+    .pages-wrapper {
+        padding: 0px 16px;
+    }
+
+    .ant-btn {
+        font-size: 12px;
+        padding: 0 16px;
+    }
+
+    .ant-btn-primary i {
+        font-size: 16px;
+        margin-right: 6px;
+    }
+
+    .header-lang .ant-btn img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .header-lang .ant-btn {
+        padding: 0 10px 0 12px;
+    }
+
+    .pages-header {
+        padding: 16px 0;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .search i.icon-filter {
+        width: 24px;
+        height: 24px;
+    }
+
+    .search input::placeholder {
+        font-size: 10px;
+    }
+
+    .tab .ant-btn {
+        font-size: 10px;
+        padding: 0 10px;
+        height: 24px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card-header {
+        margin-bottom: 16px;
+    }
+
+    .card-footer {
+        padding-top: 12px;
+    }
+
+    .table table tbody tr td {
+        font-size: 12px;
+    }
+
+    .status {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 4px 10px;
+    }
+
+    .block-text span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .fc .fc-col-header-cell-cushion {
+        font-size: 10px !important;
+    }
+
+    .fc-scrollgrid-sync-inner {
+        padding: 6px !important;
+    }
+
+    .header {
+        padding: 0 16px;
+    }
+
+    .tab-layout i {
+        font-size: 18px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .tab {
+        max-width: calc(100% - 55px);
+    }
+
+    .tab-layout {
+        padding-left: 8px;
+    }
+
+    .custom-radio-block {
+        font-size: 10px;
+        line-height: 16px;
+        padding: 0 8px;
+    }
+
+    .custom-radio-block i {
+        width: 12px;
+        height: 12px;
+    }
+
+    .text-body4 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .mb-20,
+    .mb-24 {
+        margin-bottom: 16px !important;
+    }
+    .custom-radio-block span {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 991px) {
+    .wrapper-inner {
+        width: calc(100% - 86px);
+        position: relative;
+        z-index: 1;
+        margin-left: auto;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .sidebar>* {
+        position: relative;
+        z-index: 2;
+    }
+
+    .sidebar::after {
+        content: '';
+        position: fixed;
+        right: 0;
+        left: 250px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: all 0.3s ease-in-out 0.3s;
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .wrapper.isSidebar .sidebar::after {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .search {
+        order: 3;
+        width: 100%;
+        max-width: unset;
+        margin-top: 8px;
+    }
+
+    .filter {
+        order: 4;
+    }
+
+    .header-search {
+        max-width: unset;
+        width: auto;
+        display: flex;
+    }
+
+    .header-search input {
+        display: none;
+    }
+
+    .header-search i {
+        position: unset;
+        transform: unset;
+        left: unset;
+        top: unset;
+    }
+
+    .fc .fc-toolbar-title,
+    .card-analytic h3 {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .ant-select-selection--single .ant-select-selection-selected-value {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .table {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+
+    .pagination-limit span {
+        font-size: 12px;
+    }
+
+    .ant-btn {
+        padding: 0 8px;
+    }
+
+    .pagination-item {
+        width: 24px;
+        height: 24px;
+    }
+
+    .pagination .ant-btn._32 {
+        height: 24px;
+    }
+
+    .pagination-item:first-child {
+        margin-right: 6px;
+    }
+
+    .pagination-item:last-child {
+        margin-left: 6px;
+    }
+}
+
+@media(max-width: 575px) {
+    .pagination {
+        margin-top: 16px;
+    }
+
+    .text-body3 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .status {
+        font-size: 8px;
+        line-height: 12px;
+        padding: 2px 4px;
+    }
+
+    .table table tbody tr td,
+    .table table thead tr th {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .ant-menu-item:not(:last-child) {
+        margin-bottom: 6px !important;
+    }
+
+    .header-lang {
+        margin-right: 8px;
+    }
+
+    .header-lang span {
+        display: none;
+    }
+
+    .header-lang .ant-btn {
+        border: none;
+        padding: 0;
+    }
+
+    .header-lang i {
+        display: none;
+    }
+
+    .header-lang {
+        margin: 0 auto 0 16px;
+    }
+
+    .header-user .text-body1 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .header-user .text-caption {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .header-user-info {
+        justify-content: center;
+    }
+
+    .ant-form-item-label {
+        padding: 0;
+    }
+
+    .fc-toolbar-chunk:last-child {
+        position: relative;
+        left: unset;
+    }
+
+    .pages {
+        padding: 8px;
+    }
+
+
+
+    .mb-16 {
+        margin-bottom: 8px !important;
+    }
+
+    .pages-wrapper {
+        padding: 0 8px;
+    }
+
+
+    .sidebar-footer i,
+    .ant-menu-submenu-title i,
+    .ant-menu-item i {
+        font-size: 16px;
+    }
+
+    .sidebar-footer i {
+        width: 20px;
+        height: 20px;
+    }
+
+    .wrapper.isSidebar .sidebar-logout,
+    .wrapper.isSidebar .ant-menu-item {
+        width: 24px;
+        height: 24px;
+    }
+
+    .ant-menu-submenu-title,
+    .ant-menu-sub.ant-menu-inline>.ant-menu-item,
+    .ant-menu-inline>.ant-menu-item,
+    .ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+        padding: 0 !important;
+    }
+
+    .ant-menu-submenu-title i,
+    .ant-menu-item i {
+        margin-left: 6px;
+    }
+
+    .wrapper.isSidebar .sidebar {
+        width: 56px;
+    }
+
+    .sidebar-logout {
+        padding: 0;
+    }
+
+    .sidebar-logout i {
+        font-size: 16px;
+        margin-left: 2px;
+    }
+
+    .wrapper.isSidebar .sidebar-body-menu h4 {
+        display: none;
+    }
+
+    .wrapper.isSidebar .ant-menu-submenu-title i,
+    .wrapper.isSidebar .ant-menu-item i {
+        margin-left: 4px;
+    }
+
+    .sidebar-body-menu span {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+    .sidebar-body {
+        padding: 16px 12px;
+    }
+
+    .wrapper.isSidebar .sidebar-header img {
+        width: 40px;
+    }
+
+    .sidebar-header {
+        padding: 8px;
+    }
+
+    .wrapper.isSidebar .wrapper-inner,
+    .wrapper-inner {
+        width: calc(100% - 56px);
+    }
+
+    .header {
+        padding: 0 8px;
+    }
+
+    .header-search i {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .pages-header {
+        padding: 8px 0;
+    }
+
+    .ant-form-item-label label {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .card-body {
+        flex-wrap: wrap;
+    }
+
+    .card-body>* {
+        width: 100%;
+    }
+
+    .card-body .ml-auto {
+        margin: 8px 0 0 0 !important;
+    }
+
+    .card-header {
+        margin-bottom: 8px;
+    }
+
+    .card-body {
+        padding-bottom: 8px;
+    }
+
+    .card-footer {
+        padding-top: 8px;
+    }
+
+    .pagination {
+        margin-top: 8px;
+    }
+    .card-footer>a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .card-footer>a i {
+        margin-left: 4px;
+    }
+    .custom-radio-block span {
+        font-size: 10px;
+    }
+    .ant-btn {
+        font-size: 10px;
+    }
+    .mb-32 {
+        margin-bottom: 16px !important;
+    }
+    .text-caption.black3 {
+        margin: 0;
+    }
+    .flex-center {
+        flex-wrap: wrap;
+    }
+    .flex-center > * {
+        width: 100%;
+    }
+    .flex-center > *:not(:last-child) {
+        margin-bottom: 8px;
+
+    }
+    .no-bg.ant-collapse .ant-collapse-header {
+        margin-bottom: 12px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .link-a span {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    
+}
+
+@media(max-width: 450px) {
+    .block-text span {
+        font-size: 10px;
+    }
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .pagination-controls {
+        order: 3;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .text-caption {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .text-body1 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .card {
+        padding: 8px;
+    }
+}

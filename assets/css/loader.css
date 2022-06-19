@@ -1,0 +1,8 @@
+.loader-list {
+    margin: 60px auto;
+    display: block;
+
+}
+.loader-list .ant-spin-dot-item {
+    background-color: var(--green-1);
+}

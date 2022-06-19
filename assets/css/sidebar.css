@@ -1,0 +1,215 @@
+.sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--green-1);
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.sidebar-header img {
+  /* height: 32px; */
+  width: 32px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-header h4 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--white-0);
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.sidebar-body {
+  flex: 1;
+  max-height: 100%;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-body-menu {
+  margin-bottom: 8px;
+}
+
+.sidebar-body-menu h4 {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--green-5);
+  padding: 4px 12px;
+  margin-bottom: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-body-menu ul.ant-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+  background-color: transparent;
+}
+
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.ant-menu-item {
+  border-radius: 4px;
+}
+
+
+.ant-menu-submenu-title,
+.ant-menu-sub.ant-menu-inline>.ant-menu-item,
+.ant-menu-inline>.ant-menu-item,
+.ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+  margin: 0;
+  padding: 8px 12px !important;
+  height: 36px;
+  line-height: unset;
+  display: flex;
+  align-items: center;
+}
+
+.ant-menu-submenu .ant-menu {
+  width: calc(100% - 12px);
+  margin-left: auto;
+}
+
+.ant-menu-submenu-title i,
+.ant-menu-item i {
+  font-size: 20px;
+  color: var(--white-0);
+}
+.sidebar-body-menu span {
+  margin-left: 12px;
+}
+
+.ant-menu-submenu-arrow {
+  transform: translateY(-50%) !important;
+  right: 0 !important;
+  color: var(--white-0) !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item.nuxt-link-active {
+  background-color: white;
+}
+
+.ant-menu-item.nuxt-link-active::after {
+  display: none;
+}
+
+.ant-menu-item.nuxt-link-active i {
+  color: var(--green-1);
+}
+
+.ant-menu-item:not(:last-child) {
+  margin-bottom: 2px !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item.nuxt-link-active span {
+  color: var(--black-1);
+}
+
+.ant-menu-submenu-arrow {
+  display: none !important;
+}
+
+.sidebar-body-menu .icon-angle-right {
+  margin-left: auto;
+  transform: translate();
+  margin-right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.ant-menu-submenu-open .icon-angle-right {
+  transform: rotate(90deg);
+}
+
+.sidebar-body-menu span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white-0);
+}
+
+
+.sidebar-logout {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-height: 36px;
+  padding: 10px 12px;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ant-menu-item:hover,
+.sidebar-logout:hover {
+  background: rgba(0, 179, 0, 0.5);
+}
+
+.sidebar-logout i {
+  font-size: 20px;
+  color: var(--green-5);
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-logout span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--green-6);
+  transition: all 0.3s ease-in-out;
+  margin-left: 12px;
+  overflow: hidden;
+}
+
+.sidebar-logout {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.sidebar-logout i {
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.sidebar-footer i {
+  font-size: 20px;
+  color: white;
+  border: 1px solid var(--white-0);
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+}

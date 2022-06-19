@@ -1,0 +1,244 @@
+@import "./config.css";
+@import "./auth.css";
+@import "./cards.css";
+@import "./sidebar.css";
+@import "./table.css";
+@import "./header.css";
+@import "./filter.css";
+@import "./layout.css";
+@import "./tab.css";
+@import "./custom.css";
+@import "./popup.css";
+@import "./uploader.css";
+@import "./switcher.css";
+@import "./calendar.css";
+@import "./loader.css";
+@import "./pagination.css";
+
+
+.wrapper {
+    display: flex;
+    background-color: #F7F7F7;
+}
+
+.wrapper.isSidebar .sidebar-header h4 {
+    width: 0;
+    margin: 0;
+}
+
+.wrapper.isSidebar .sidebar-body-menu h4 {
+    text-align: center;
+    padding: 0;
+}
+
+.wrapper.isSidebar .sidebar-logout,
+.wrapper.isSidebar .ant-menu-item {
+    width: 44px;
+    margin: 0 auto;
+    height: 36px;
+}
+
+.wrapper.isSidebar .sidebar-logout {
+    margin: auto auto 0 auto;
+}
+
+.wrapper.isSidebar .sidebar-logout span,
+.wrapper.isSidebar .ant-menu-item span {
+    width: 0;
+}
+
+.wrapper.isSidebar .sidebar {
+    width: 86px;
+}
+
+.wrapper.isSidebar .wrapper-inner {
+    width: calc(100% - 86px);
+}
+
+
+.wrapper.isSidebar .sidebar-footer i {
+    margin: 0 auto;
+}
+
+.wrapper.isSidebar .sidebar-header img {
+    width: 54px;
+    height: auto;
+}
+
+.wrapper-inner {
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+/* detail */
+
+.all-search {
+    display: flex;
+}
+
+.all-search input {
+    height: 32px;
+}
+
+.all-search>i {
+    margin-left: 12px;
+    max-width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    background-color: var(--blue-2);
+    color: var(--blue-1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.all-search>i.active {
+    background-color: var(--blue-1);
+    color: var(--white-0);
+}
+
+.all-search-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.all-search-wrapper i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--black-4);
+    font-size: 16px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.all-search input {
+    padding: 0 12px 0 36px;
+}
+
+.all-filter-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.all-filter-header span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.all-filter-header span i {
+    display: flex;
+    font-size: 16px;
+    color: var(--black-2);
+}
+
+.all-list-item {
+    border-radius: 4px;
+    padding: 10px 12px;
+    background-color: var(--blue-2);
+    cursor: pointer;
+}
+
+.all-list-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.all-list-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.all-list-item-header span {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-1);
+}
+
+.all-list-item p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--blue-1);
+    margin-bottom: 8px;
+}
+
+.all-list-item>span {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--black-1);
+}
+
+.all-list-item>span b {
+    color: var(--green-1);
+}
+
+.all-list-item.active {
+    background-color: var(--blue-1);
+}
+
+.all-list-item.active .all-list-item-header span {
+    color: var(--blue-2);
+}
+
+.all-list-item.active p,
+.all-list-item.active>span b,
+.all-list-item.active>span {
+    color: var(--white-0) !important;
+}
+
+.all .tab {
+    padding: 0;
+}
+
+.all .my-col {
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.all .my-col.active {
+    width: calc(100% / 24 * 6 - 10px);
+    margin-left: auto;
+}
+
+.all .tab .ant-btn {
+    height: 24px;
+    padding: 0 12px;
+}
+
+.all .ant-btn {
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+.all .block-text span {
+    padding: 2px 4px;
+}
+
+.all-filter-header2 i {
+    font-size: 16px;
+    color: var(--blue-1);
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.all .content {
+    height: 100%;
+}

@@ -1,0 +1,241 @@
+/* _1 */
+
+.uploader-main._2,
+.uploader-main._1 {
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px dashed var(--black-4);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.uploader-list-item._1 {
+    min-height: 56px;
+    background: #f9f9f9;
+    border: 1px solid var(--black-5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uploader-list-item._1 span {
+    display: flex;
+    align-items: center;
+}
+
+.uploader-list-item._1 span i {
+    color: var(--blue-1);
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.uploader-list-item._1 .icon-rubbish {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red-4);
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* _1 */
+
+.uploader-main._2 {
+    height: 84px;
+}
+
+.uploader-header-item._2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 4px 8px;
+    border: 1px solid var(--black-5);
+    background-color: #F9F9F9;
+}
+
+.uploader-header-item._2 .icon-download {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-2);
+    color: var(--blue-1);
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.uploader-header-item._2 .text-caption {
+    display: flex;
+    align-items: center;
+}
+
+.uploader-header-item._2 .text-caption img {
+    margin-right: 12px;
+}
+
+.uploader-list._2 {
+    background: #F9F9F9;
+    border: 1px solid var(--black-5);
+    border-radius: 4px;
+    padding: 0 12px;
+}
+
+.uploader-list-header._2 {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--black-5);
+}
+
+.uploader-list-body-item._2 {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uploader-list-body-item._2 span {
+    display: flex;
+    align-items: center;
+}
+
+.uploader-list-body-item._2 span i {
+    font-size: 16px;
+    color: var(--blue-1);
+    margin-right: 12px;
+
+}
+
+.uploader-list-body-item._2 .icon-rubbish {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--red-4);
+}
+
+/*  */
+
+.uploader-body._2 .popup-uploader-block,
+.uploader-body._2 .ant-form-item-children {
+    width: 100%;
+
+}
+
+.page-uploader {
+    width: 100%;
+    display: block;
+}
+
+.page-uploader .ant-upload-list::before {}
+
+.page-uploader .ant-upload.ant-upload-drag:not(.ant-upload-disabled):hover {
+    border-color: var(--green-2);
+}
+
+.page-uploader .ant-upload.ant-upload-drag .ant-upload {
+    padding: 32px 0;
+}
+
+.page-uploader .ant-upload {
+    padding: 0;
+}
+
+.page-uploader .ant-upload-list>div:not(:last-child) .ant-upload-list-item-info>span {
+    border-bottom: 1px solid var(--black-5);
+}
+
+.page-uploader .ant-upload-list-item-info>span {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    height: auto;
+    width: 100%;
+}
+
+.page-uploader .ant-upload-list-item-name {
+    width: auto;
+    padding: 0;
+    margin-right: auto;
+}
+
+.page-uploader .ant-upload-list-item-info>span>* {
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    transform: translate(0, 0);
+}
+
+.page-uploader .ant-upload-list-item:hover .ant-upload-list-item-info {
+    background-color: transparent;
+    padding: 0;
+}
+
+.page-uploader .ant-upload-list-item-info {
+    padding: 0;
+    height: auto;
+}
+
+.page-uploader .ant-upload-list-item-card-actions {
+    opacity: 1;
+}
+
+.page-uploader .ant-upload-list-item-card-actions .anticon {
+    padding: 0;
+}
+
+.page-uploader .ant-upload-list>div,
+.page-uploader .ant-upload-list>div>span {
+    display: block;
+}
+
+.page-uploader .ant-upload-list-item {
+    height: auto;
+    margin: 0;
+}
+
+.page-uploader .ant-upload {
+    margin-bottom: 16px;
+}
+
+.page-uploader .anticon-paper-clip {
+    margin-right: 12px;
+
+}
+
+.page-uploader .anticon-paper-clip svg {
+    fill: var(--blue-1);
+}
+
+.page-uploader .anticon-delete {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red-4);
+    border-radius: 4px;
+}
+
+.page-uploader .anticon-delete svg {
+    fill: var(--red-1);
+}
+
+.page-uploader .ant-upload-list {
+    padding: 0 12px;
+    background-color: #F9F9F9;
+}

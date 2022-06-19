@@ -1,0 +1,72 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.pagination-limit .btn.dropdown-toggle {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    border: 0;
+    height: 40px;
+    color: #313131;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 4px;
+}
+
+.pagination-limit .dropdown-toggle::after {
+    margin-left: 10px;
+}
+
+.pagination-limit span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #313131;
+}
+
+.pagination-item {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 4px;
+}
+
+.pagination-item:last-child {
+    margin-left: 8px;
+}
+
+.pagination-item:first-child {
+    margin-right: 12px;
+}
+
+.pagination-item:not([disabled="disabled"]) {
+    cursor: pointer;
+}
+
+.pagination-item.active {
+    background-color: var(--green-2);
+    color: white;
+    border-color: var(--green-2);
+}
