@@ -23,7 +23,7 @@ export const actions = {
         return new Promise(async (resolve, reject) => {
             try {
                 commit("setState", { key: "loading", payload: true })
-                const { data } = await this.$axios.get("/admin/user/list/", { params })
+                const { data } = await this.$axios.get("/user/list/", { params })
                 const { results, count } = data || {}
                 commit("setState", { key: `list`, payload: results })
                 commit("setState", { key: `count`, payload: count })
@@ -38,7 +38,7 @@ export const actions = {
     },
     async postDetail(_, { form }) {
         try {
-            let res = await this.$axios.post('/admin/user/create/', form)
+            let res = await this.$axios.post('/user/create/', form)
             return res
         } catch (e) {
             return e

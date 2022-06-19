@@ -12,8 +12,14 @@
           class="mb-20"
         >
           <a-col :lg="8" :sm="12" :xs="24">
-            <a-form-model-item label="F.I.SH">
-              <a-input placeholder="Matn kiriting" v-model="form.fullname">
+            <a-form-model-item label="Ism">
+              <a-input placeholder="Ismini kiriting" v-model="form.first_name">
+              </a-input>
+            </a-form-model-item>
+          </a-col>
+          <a-col :lg="8" :sm="12" :xs="24">
+            <a-form-model-item label="Familya">
+              <a-input placeholder="Familyasini kiriting" v-model="form.last_name">
               </a-input>
             </a-form-model-item>
           </a-col>
@@ -27,12 +33,7 @@
               </a-input>
             </a-form-model-item>
           </a-col>
-          <a-col :lg="8" :sm="12" :xs="24">
-            <a-form-model-item label="Email">
-              <a-input placeholder="Email kiriting" v-model="form.email">
-              </a-input>
-            </a-form-model-item>
-          </a-col>
+  
           <a-col :lg="8" :sm="12" :xs="24">
             <a-form-model-item
               label="Foydalanuvchi roli"
@@ -55,8 +56,8 @@
             </a-form-model-item>
           </a-col>
           <a-col :lg="8" :sm="12" :xs="24">
-            <a-form-model-item label="Login" has-feedback prop="login">
-              <a-input placeholder="Loginni kiriting" v-model="form.login">
+            <a-form-model-item label="Login" has-feedback prop="username">
+              <a-input placeholder="Loginni kiriting" v-model="form.username">
               </a-input>
             </a-form-model-item>
           </a-col>
@@ -70,7 +71,13 @@
               </a-input>
             </a-form-model-item>
           </a-col>
-          <a-col :lg="16" :sm="12" :xs="24">
+          <a-col :lg="8" :sm="12" :xs="24">
+            <a-form-model-item label="Email">
+              <a-input placeholder="Email kiriting" v-model="form.email">
+              </a-input>
+            </a-form-model-item>
+          </a-col>
+          <a-col :lg="8" :sm="12" :xs="24">
             <a-form-model-item label="Manzil">
               <a-input placeholder="Manzilni kiriting" v-model="form.address">
               </a-input>
@@ -114,10 +121,11 @@ export default {
   data() {
     return {
       form: {
-        fullname: "",
+        first_name: "",
+        last_name: "",
         role: null,
         password: "",
-        login: "",
+        username: "",
         phone: "",
         email: "",
         birth_date: "",

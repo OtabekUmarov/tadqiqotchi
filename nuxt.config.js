@@ -82,12 +82,6 @@ export default {
     },
     axios: {
         baseURL: process.env.VUE_APP_BASE_URL,
-        // proxy: true,
     },
-
-    // proxy: {
-    //   '/api/': 'https://edu.sudya.uz/api/v1/'
-    // },
-    // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {}
 }
