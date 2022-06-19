@@ -1,6 +1,11 @@
 <template>
-  <layouts title="Kirdi chiqdi vaqtlari">
+  <layouts title="Foydalanuvchilar">
     <template #headerItems>
+      <a-button class="green" type="primary" @click="$router.push({
+        path: '/cabinet/advisor/task/create'
+      })">
+        <i class="icon-user-plus"></i> Qo‘shish
+      </a-button>
     </template>
     <template #body>
       <a-spin size="large" class="loader-list" v-if="loading" />
@@ -10,22 +15,27 @@
             <thead>
               <tr>
                 <th width="1%">№</th>
-                <th>F.I.SH</th>
-                <th>Vaqti</th>
-                <th>Login</th>
-                <th>Role</th>
+                <th>Nomi</th>
+                <th>Tugash sanasi</th>
+                <th>Fayl</th>
               </tr>
             </thead> 
             <tbody>
               <tr v-for="(item, index) in list" :key="item.id">
                 <td>{{ index + 1 + params.offset }}</td>
-                <td>{{ item.user && item.user.full_name }}</td>
+                <td class="nowrap">{{ item.title }}</td>
+                <td>{{ item.exam_date | dateFormat }}</td>
                 <td>
-                  {{ item.datetime  | timeFormat }} / 
-                  {{ item.datetime  | dateFormat }}
+                  <a :href="item.file" download target="_blank" type="primary">
+                    <template v-if="item.file">
+                      <i class="icon-download"></i>
+                      <small>Yuklab olish</small>
+                    </template>
+                    <template v-else>
+                      <small>Yuklanmagan</small>
+                    </template>
+                    </a>          
                 </td>
-                <td>{{ item.user && item.user.username }}</td>
-                <td>{{ item.user && item.user.role }}</td>
               </tr>
             </tbody>
           </table>
@@ -41,7 +51,7 @@
 import { mapGetters, mapActions } from "vuex"
 
 export default {
-  middleware: 'admin',
+  middleware: 'advisor',
   data() {
     return {
       pagination: {
@@ -51,7 +61,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters('admin/log', ['list', 'count', 'loading']),
+    ...mapGetters('advisor/task', ['list', 'count', 'loading']),
     params() {
       let params = {
         limit: this.pagination.limit || 10,
@@ -61,7 +71,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions("admin/log", ["getList"]),
+    ...mapActions("advisor/task", ["getList"]),
     paginate(arg) {
       this.pagination.page = arg
       this.fetchList()

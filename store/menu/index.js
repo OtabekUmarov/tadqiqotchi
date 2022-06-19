@@ -47,6 +47,44 @@ export const state = () => ({
                 ],
             },
         ],
+        advisor: [
+            {
+                title: "Bo‘limlar",
+                list: [
+                    {
+                        id: 1,
+                        title: "Shahsiy kabinet",
+                        icon: "icon-sidebar-file-plus",
+                        path: '/cabinet/advisor/profile'
+                    },
+                    {
+                        id: 1,
+                        title: "Vazifa yuborish",
+                        icon: "icon-sidebar-file-plus",
+                        path: '/cabinet/advisor/task'
+                    }
+                ],
+            },
+        ],
+        supervisor: [
+            {
+                title: "Bo‘limlar",
+                list: [
+                    {
+                        id: 1,
+                        title: "Shahsiy kabinet",
+                        icon: "icon-sidebar-file-plus",
+                        path: '/cabinet/supervisor/profile'
+                    },
+                    {
+                        id: 3,
+                        title: "Kuzatish",
+                        icon: "icon-sidebar-graph",
+                        path: "/cabinet/admin/log"
+                    },
+                ],
+            },
+        ],
         organizer: [
             {
                 title: 'Bo‘limlar',

@@ -18,14 +18,18 @@
                 <th>F.I.SH</th>
                 <th>Telefon raqami</th>
                 <th>Login</th>
+                <th>Role</th>
               </tr>
             </thead> 
             <tbody>
               <tr v-for="(item, index) in list" :key="item.id">
                 <td>{{ index + 1 + params.offset }}</td>
-                <td>{{ item.fullname }}</td>
+                <td class="nowrap">{{ item.first_name }}
+                    {{ item.last_name }}
+                </td>
                 <td>{{ item.phone }}</td>
-                <td>{{ item.login }}</td>
+                <td>{{ item.username }}</td>
+                <td>{{ item.role }}</td>
               </tr>
             </tbody>
           </table>

@@ -46,21 +46,17 @@ export const mutations = {
 export const actions = {
   async login({commit, dispatch}, payload) {
     try {
-      await this.$axios.post('https://shaffof-api.mdg.uz/authapp/access/', payload).then(res => {
+      await this.$axios.post('http://192.168.159.227:8000/authapp/access/', payload).then(res => {
         const access_token = res.data.access
         const token_split = access_token.split(".")
         const fields_str = JSON.parse(atob(token_split[1]))
         console.log("fields_str", fields_str)
-        if  (fields_str.sent_role == 'Customer') {
-          fields_str.sent_role = 'Admin'
-        }
-        commit('setState', {key: "auth_user", payload: fields_str.sent_role})
+        commit('setState', {key: "auth_user", payload: fields_str.user_role})
         commit('setState', {key: "user_error", payload: ''})
         commit('setState', {key: "user_info", payload: fields_str})
         commit('setState', {key: "access", payload: access_token})
-        commit('setState', {key: "role", payload: fields_str.sent_role})
+        commit('setState', {key: "role", payload: fields_str.user_role})
         dispatch('smartRouting', fields_str)
-        console.log(res)
         return res
       })
       .catch(err => {
@@ -77,18 +73,18 @@ export const actions = {
       return err
     }
   },
-  smartRouting({state}, {sent_role}) {
-    console.log("sent_role", sent_role)
-    state.role == sent_role ;
-    if(sent_role == "Admin"){
+  smartRouting({state}, {user_role}) {
+    console.log("user_role", user_role)
+    state.role == user_role ;
+    if(user_role == "Admin"){
       this.$router.push('/cabinet/admin')
-    }else if(sent_role == 'Participant'){
-      this.$router.push('/cabinet/participant')
-    }else if(sent_role == 'Organizer'){
-      this.$router.push('/cabinet/organizer')
-    } else if(sent_role == 'Moderator'){
-      this.$router.push('/cabinet/moderator')
-    } else if(sent_role == 'Minfin_moderator'){
+    }else if(user_role == 'Advisor'){
+      this.$router.push('/cabinet/advisor')
+    }else if(user_role == 'Supervisor'){
+      this.$router.push('/cabinet/supervisor')
+    } else if(user_role == 'Researcher'){
+      this.$router.push('/cabinet/researcher')
+    } else if(user_role == 'Minfin_moderator'){
       this.$router.push('/cabinet/minfin-moderator')
     }
   },
@@ -98,7 +94,7 @@ export const actions = {
     commit('setState', {key: "role", payload: localStorage.getItem('role') || null })
   },
   async logout({ commit }) {
-    await this.$axios.post("https://shaffof-api.mdg.uz/authapp/logout/").then(res => {
+    await this.$axios.post("http://192.168.159.227:8000/authapp/logout/").then(res => {
       console.log(res.data.status);
     })
     commit('setState', {key: "auth_user", payload: ''})

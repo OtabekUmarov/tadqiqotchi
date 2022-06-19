@@ -1,12 +1,14 @@
 
 export const state = () => ({
     list: [],
+    detail: {},
     loading: true,
     count: 0,
 })
 
 export const getters = {
     loading: state => state.loading,
+    detail: state => state.detail,
     list: state => state.list,
     count: state => state.count,
 }
@@ -20,7 +22,7 @@ export const actions = {
         return new Promise(async (resolve, reject) => {
             try {
                 commit("setState", { key: "loading", payload: true })
-                const { data } = await this.$axios.get("/logging/login-event/", { params })
+                const { data } = await this.$axios.get("/advisor/task/list/", { params })
                 const { results, count } = data || {}
                 commit("setState", { key: `list`, payload: results })
                 commit("setState", { key: `count`, payload: count })
@@ -32,5 +34,13 @@ export const actions = {
                 reject(false)
             }
         })
+    },
+    async postDetail(_, { form }) {
+        try {
+            let res = await this.$axios.post('/advisor/task/create/', form)
+            return res
+        } catch (e) {
+            return e
+        }
     },
 }

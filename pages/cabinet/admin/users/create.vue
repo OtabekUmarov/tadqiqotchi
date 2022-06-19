@@ -130,12 +130,12 @@ export default {
         email: "",
         birth_date: "",
         address: "",
-        img: null,
+        image: null,
       },
       roles: [
         {
           id: 1,
-          value: "supervisor",
+          value: "Supervisor",
           title: {
             ru: "Nazoratchi",
             uz: "Nazoratchi",
@@ -144,7 +144,7 @@ export default {
         },
         {
           id: 2,
-          value: "advisor",
+          value: "Advisor",
           title: {
             ru: "Ilmiy rahbar",
             uz: "Ilmiy rahbar",
@@ -153,7 +153,7 @@ export default {
         },
         {
           id: 3,
-          value: "researcher",
+          value: "Researcher",
           title: {
             ru: "Tadqiqotchi",
             uz: "Tadqiqotchi",
@@ -162,7 +162,7 @@ export default {
         },
         {
           id: 4,
-          value: "admin",
+          value: "Admin",
           title: {
             ru: "Admin",
             uz: "Admin",
@@ -199,7 +199,7 @@ export default {
   methods: {
     ...mapActions("admin/user", ["postDetail"]),
     handleChange(info) {
-      this.form.img = info;
+      this.form.image = info;
     },
     async submitForm() {
       this.$refs.form.validate(async (valid) => {
@@ -207,7 +207,7 @@ export default {
           this.pending = true;
           let f = new FormData();
           Object.keys(this.form).forEach((k) => {
-            if (k == "img") {
+            if (k == "image") {
               if (
                 this.form[k] &&
                 this.form[k].file &&
